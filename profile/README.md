@@ -1,22 +1,21 @@
 # rstream
 
-rstream is a secure tunneling platform that transforms localhost into globally accessible endpoints.  
-It allows developers and operators to expose any TCP/UDP service — HTTP, TLS, DTLS, QUIC, WebSocket, WebTransport — to the internet safely, without opening firewalls or managing NAT.
+rstream is a secure tunneling platform that turns local and private services into globally reachable endpoints. It exposes TCP and UDP workloads — HTTP, TLS, DTLS, QUIC, WebSocket, and WebTransport — without opening inbound ports or changing NAT.
 
-## Key Features
+## Key features
 
-- Secure by default: TLS 1.3, DTLS, QUIC, optional mTLS, IP allowlists, token auth, SSO.
-- Multi-protocol support: HTTP/1.1, HTTP/2, HTTP/3, WebSocket, raw TCP/UDP, DTLS, QUIC.
-- Published or private tunnels with automatic reconnection and load balancing.
-- Developer-friendly CLI and SDKs for automation and integration.
+- Outbound-only connectivity with encryption by default (TLS 1.3 transport), with support for modern tunnel protocols and transports.
+- Edge enforcement for authentication and access policy, including options such as token-based access, mutual TLS, and IP or GeoIP restrictions (availability depends on deployment and plan).
+- Published and private tunnels for both public endpoints and client-only connectivity.
+- CLI and SDKs for operator workflows, automation, and product integration.
 
 ## SDKs
 
-- **Go / C++ SDKs:** Full tunnel lifecycle management (create, update, close).
-- **JavaScript SDK:** Interact with the rstream API (list tunnels, watch events, etc.).
+- **Go and C++ SDKs:** Full tunnel lifecycle management (create, update, close) and runtime connectivity.
+- **JavaScript SDK:** API integration patterns such as listing tunnels and watching events.
 
-## Learn More
+## Learn more
 
 📚 [Documentation](https://rstream.io/docs)  
-💻 [Go SDK](https://github.com/rstreamlabs/rstream-go) – [C++ SDK](https://github.com/rstreamlabs/rstream-cpp) – [JS SDK](https://github.com/rstreamlabs/rstream-js)  
+💻 [Go SDK](https://github.com/rstreamlabs/rstream-go) · [C++ SDK](https://github.com/rstreamlabs/rstream-cpp) · [JS SDK](https://github.com/rstreamlabs/rstream-js)  
 🌐 [Website](https://rstream.io)
