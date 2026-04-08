@@ -1,27 +1,39 @@
 # rstream
 
-rstream is a secure connectivity platform that turns local and private services into globally reachable endpoints. It exposes TCP and UDP workloads — HTTP, TLS, DTLS, QUIC, WebSocket, and WebTransport — without opening inbound ports or changing NAT.
+rstream is a developer-first platform for zero-trust networking.
 
-## Key features
+It combines an edge network with lightweight agents to publish local and private services through outbound-only tunnels, with identity, access policy, and observability handled at the edge. The same model covers browser-facing services, internal access paths, remote devices, and embedded systems without requiring inbound exposure or a VPN.
 
-- Outbound-only connectivity with encryption by default (TLS 1.3 transport), with support for modern tunnel protocols and transports.
-- Edge enforcement for authentication and access policy, including token-based access, mutual TLS, and IP or GeoIP restrictions (availability depends on deployment and plan).
-- Published and private tunnels for both public endpoints and client-only connectivity.
-- CLI and SDKs for operator workflows, automation, and product integration.
+HTTP and non-HTTP workloads share the same connectivity model, including HTTP, TCP, TLS, DTLS, QUIC, WebSocket, and WebTransport. rstream can also provide managed STUN/TURN for WebRTC connectivity when browser peers need relay support.
 
-## SDKs
+## What rstream provides
 
-- **Go SDK**: Reference implementation with the broadest rstream API surface (and includes the CLI codebase).
-- **C++ SDK**: Native integration for performance-critical environments and asynchronous C++ codebases.
-- **JavaScript SDK**: Control-plane and integration workflows (listing tunnels, watching events, automation).
+- Outbound-only tunnels with encryption by default.
+- Edge authentication and access policy, including rstream Auth, tokens, mutual TLS, IP restrictions, and GeoIP rules depending on deployment and plan.
+- Published and private tunnels for browser-facing services, internal access, and client-only connectivity.
+- CLI and SDKs for operator workflows, backend integration, and device-side software.
+- Built-in observability for connection logs, metrics, and operational tooling.
+- Browser-based operator flows such as WebTTY for identity-aware terminal access.
+- Sandbox-oriented connectivity patterns for isolated code execution and runner orchestration.
 
-## Core repositories
+## Common use cases
 
-- **Engine server**: https://github.com/rstreamlabs/rstream-engine  
-- **Next.js integration**: https://github.com/rstreamlabs/rstream-nextjs  
+- Local development, demos, QA, and temporary endpoint exposure.
+- Zero-trust access to SSH, dashboards, APIs, and other private services.
+- Fleet operations, remote administration, and browser-based terminal access with WebTTY.
+- Real-time systems that need low-latency signaling, datagram transports, or STUN/TURN-assisted connectivity.
+- AI and agent workflows that need isolated execution environments and controlled network reachability.
+
+## SDKs and examples
+
+- Go SDK and CLI: https://github.com/rstreamlabs/rstream-go
+- C++ SDK: https://github.com/rstreamlabs/rstream-cpp
+- JavaScript SDK: https://github.com/rstreamlabs/rstream-js
+- Examples: https://github.com/rstreamlabs/rstream-examples
 
 ## Learn more
 
-📚 Documentation: https://rstream.io/docs  
-💻 SDKs: https://github.com/rstreamlabs/rstream-go · https://github.com/rstreamlabs/rstream-cpp · https://github.com/rstreamlabs/rstream-js  
-🌐 Website: https://rstream.io
+- Documentation: https://rstream.io/docs
+- Guides: https://rstream.io/guides
+- Website: https://rstream.io
+- GitHub organization: https://github.com/rstreamlabs
