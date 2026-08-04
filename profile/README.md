@@ -12,6 +12,7 @@ HTTP and non-HTTP workloads share the same connectivity model, including HTTP, T
 - Edge authentication and access policy, including rstream Auth, tokens, mutual TLS, IP restrictions, and GeoIP rules depending on deployment and plan.
 - Published and private tunnels for browser-facing services, internal access, and client-only connectivity.
 - CLI, SDKs, and a Kubernetes operator for operational workflows, backend integration, and device-side software.
+- Project lifecycle events and webhooks for event-driven integrations around volatile tunnel state.
 - Built-in observability for connection logs, metrics, and operational tooling.
 - Browser-based operator flows such as WebTTY for identity-aware terminal access.
 - Sandbox-oriented connectivity patterns for isolated code execution and runner orchestration.
@@ -28,8 +29,10 @@ HTTP and non-HTTP workloads share the same connectivity model, including HTTP, T
 ## SDKs, operator, and examples
 
 - Go SDK and CLI: https://github.com/rstreamlabs/rstream-go
-- C++ SDK: https://github.com/rstreamlabs/rstream-cpp
 - JavaScript SDK: https://github.com/rstreamlabs/rstream-js
+- Python SDK: https://github.com/rstreamlabs/rstream-python
+- Java SDK: https://github.com/rstreamlabs/rstream-java
+- C++ SDK: https://github.com/rstreamlabs/rstream-cpp
 - Kubernetes operator: https://github.com/rstreamlabs/rstream-operator
 - Examples: https://github.com/rstreamlabs/rstream-examples
 
