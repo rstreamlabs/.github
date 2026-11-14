@@ -1,44 +1,23 @@
 # rstream
 
-rstream is a developer-first platform for zero-trust networking.
+Connect services across private networks through outbound tunnels. rstream combines an edge network with a CLI, application SDKs and browser tools: the agent maintains the connection, and the edge routes traffic and applies access policy.
 
-It combines an edge network with lightweight agents to publish local and private services through outbound-only tunnels, with identity, access policy, and observability handled at the edge. The same model covers browser-facing services, internal access paths, remote devices, and embedded systems without requiring inbound exposure or a VPN.
+Published tunnels provide an address for ordinary clients. Private tunnels are reached through an authenticated rstream client. The same model supports local development, backend integrations, device fleets and remote operations.
 
-HTTP and non-HTTP workloads share the same connectivity model, including HTTP, TCP, TLS, DTLS, QUIC, WebSocket, and WebTransport. rstream can also provide managed STUN/TURN for WebRTC connectivity when browser peers need relay support.
+## Choose an integration
 
-## What rstream provides
+| Component | Best starting point |
+| --- | --- |
+| [Go SDK and CLI](https://github.com/rstreamlabs/rstream-go) | The reference implementation, broad protocol coverage and command-line workflows. |
+| [C++ SDK](https://github.com/rstreamlabs/rstream-cpp) | Native, asynchronous applications built around Boost.Asio. |
+| [JavaScript and TypeScript SDKs](https://github.com/rstreamlabs/rstream-js) | Node.js tunnel runtimes, API clients and browser/React integrations. |
+| [Python SDK](https://github.com/rstreamlabs/rstream-python) | Async Python services, ASGI/WSGI applications and webhook receivers. |
+| [Java SDK](https://github.com/rstreamlabs/rstream-java) | JVM services using JDK streams, futures and framework adapters. |
+| [Kubernetes operator](https://github.com/rstreamlabs/rstream-operator) | Declarative tunnels for Kubernetes Services. |
+| [Examples](https://github.com/rstreamlabs/rstream-examples) | Complete applications combining rstream with other components. |
 
-- Outbound-only tunnels with encryption by default.
-- Edge authentication and access policy, including rstream Auth, tokens, mutual TLS, IP restrictions, and GeoIP rules depending on deployment and plan.
-- Published and private tunnels for browser-facing services, internal access, and client-only connectivity.
-- CLI, SDKs, and a Kubernetes operator for operational workflows, backend integration, and device-side software.
-- Project lifecycle events and webhooks for event-driven integrations around volatile tunnel state.
-- Built-in observability for connection logs, metrics, and operational tooling.
-- Browser-based operator flows such as WebTTY for identity-aware terminal access.
-- Sandbox-oriented connectivity patterns for isolated code execution and runner orchestration.
+SDKs share the connectivity model and configuration conventions, with different protocol and runtime capabilities. Each repository explains its supported surface and provides a first example.
 
-## Common use cases
+## Learn and contribute
 
-- Local development, demos, QA, and temporary endpoint exposure.
-- Zero-trust access to SSH, dashboards, APIs, and other private services.
-- Fleet operations, remote administration, and browser-based terminal access with WebTTY.
-- Kubernetes-native tunnel management for Services that should be exposed through rstream.
-- Real-time systems that need low-latency signaling, datagram transports, or STUN/TURN-assisted connectivity.
-- AI and agent workflows that need isolated execution environments and controlled network reachability.
-
-## SDKs, operator, and examples
-
-- Go SDK and CLI: https://github.com/rstreamlabs/rstream-go
-- JavaScript SDK: https://github.com/rstreamlabs/rstream-js
-- Python SDK: https://github.com/rstreamlabs/rstream-python
-- Java SDK: https://github.com/rstreamlabs/rstream-java
-- C++ SDK: https://github.com/rstreamlabs/rstream-cpp
-- Kubernetes operator: https://github.com/rstreamlabs/rstream-operator
-- Examples: https://github.com/rstreamlabs/rstream-examples
-
-## Learn more
-
-- Documentation: https://rstream.io/docs
-- Guides: https://rstream.io/guides
-- Website: https://rstream.io
-- GitHub organization: https://github.com/rstreamlabs
+Start with the [product documentation](https://rstream.io/docs) for concepts and setup, then use the [guides](https://rstream.io/guides) for complete workflows. For contributions, follow the owning repository’s development guide. Questions and reproducible bugs belong in that repository’s issues; report vulnerabilities through the [security policy](../SECURITY.md).
