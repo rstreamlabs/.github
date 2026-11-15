@@ -9,7 +9,7 @@ Published tunnels provide an address for ordinary clients. Private tunnels are r
 | Component | Best starting point |
 | --- | --- |
 | [Go SDK and CLI](https://github.com/rstreamlabs/rstream-go) | The reference implementation, broad protocol coverage and command-line workflows. |
-| [C++ SDK](https://github.com/rstreamlabs/rstream-cpp) | Native, asynchronous applications built around Boost.Asio. |
+| [C++ SDK](https://github.com/rstreamlabs/rstream-cpp) | Native applications that own their Boost.Asio event loop and use callbacks, futures or coroutines. |
 | [JavaScript and TypeScript SDKs](https://github.com/rstreamlabs/rstream-js) | Node.js tunnel runtimes, API clients and browser/React integrations. |
 | [Python SDK](https://github.com/rstreamlabs/rstream-python) | Async Python services, ASGI/WSGI applications and webhook receivers. |
 | [Java SDK](https://github.com/rstreamlabs/rstream-java) | JVM services using JDK streams, futures and framework adapters. |
