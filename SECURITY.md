@@ -1,6 +1,6 @@
 # Security Policy
 
-If you believe you have found a security issue in a rstream repository, please avoid opening a public issue with exploit details.
+If you believe you have found a security issue in an rstream repository, please avoid opening a public issue with exploit details.
 
 Use GitHub private vulnerability reporting for the affected repository when it is available. If that path is not enabled yet, contact the maintainers privately at `reports@rstream.io` before disclosing the issue in public.
 
