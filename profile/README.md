@@ -1,13 +1,15 @@
 # rstream
 
-rstream makes a service running on your laptop, server or private network
-reachable through a connection opened from that machine. You can share a
-web app at a URL or keep access private to authenticated applications.
+Connect services across private networks through outbound tunnels. An agent
+connects to rstream from the network where the service runs. The edge routes
+requests and applies its access policy. Publish an address for ordinary
+clients or keep the tunnel private for authenticated rstream clients.
 
 ## Get started
 
-[Create your first HTTP tunnel](https://rstream.io/docs/getting-started/quickstart-guide)
-to install the CLI, share a small local server and test its URL. Use the [Kubernetes Operator](https://github.com/rstreamlabs/rstream-operator)
+Follow the [CLI quickstart](https://rstream.io/docs/getting-started/quickstart-guide)
+to install rstream, forward a local service and verify its public address.
+Use the [Kubernetes Operator](https://github.com/rstreamlabs/rstream-operator)
 when your platform declares tunnels alongside Kubernetes Services.
 
 ## Build with rstream
