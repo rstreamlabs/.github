@@ -7,9 +7,9 @@ clients or keep the tunnel private for authenticated rstream clients.
 
 ## Get started
 
-[Install the CLI](https://rstream.io/docs/getting-started/installation) and
-follow the [CLI workflow](https://rstream.io/docs/getting-started/cli-workflow)
-to forward a local service. Use the [Kubernetes Operator](https://github.com/rstreamlabs/rstream-operator)
+Follow the [CLI quickstart](https://rstream.io/docs/getting-started/quickstart-guide)
+to install rstream, forward a local service and verify its public address.
+Use the [Kubernetes Operator](https://github.com/rstreamlabs/rstream-operator)
 when your platform declares tunnels alongside Kubernetes Services.
 
 ## Build with rstream
